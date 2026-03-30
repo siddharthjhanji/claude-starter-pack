@@ -14,3 +14,4 @@
 - [reference_youtube_clipper.md](reference_youtube_clipper.md) — YouTube Clipper Skill — AI semantic chapter analysis, video clipping, bilingual EN/ZH subtitles, subtitle burning, social media summaries. Requires ffmpeg-full (not standard ffmpeg).
 - [reference_gsd.md](reference_gsd.md) — GET SHIT DONE — spec-driven dev system solving context rot: fresh 200k subagent contexts, wave-based parallel execution, Discuss→Plan→Execute→Verify→Ship workflow. 57 commands.
 - [reference_oh_my_claudecode.md](reference_oh_my_claudecode.md) — oh-my-claudecode (OMC) — multi-agent orchestration: Team pipeline, 19 agents, 32 skills, magic keywords, tmux CLI workers, hooks, OpenClaw, custom skills
+- [reference_marketing_skills.md](reference_marketing_skills.md) — 34 marketing skills (coreyhaines31) — CRO, SEO, copy, paid ads, email, growth, strategy. Installed in claude-starter-pack/skills/
