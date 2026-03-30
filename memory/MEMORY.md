@@ -15,3 +15,4 @@
 - [reference_gsd.md](reference_gsd.md) — GET SHIT DONE — spec-driven dev system solving context rot: fresh 200k subagent contexts, wave-based parallel execution, Discuss→Plan→Execute→Verify→Ship workflow. 57 commands.
 - [reference_oh_my_claudecode.md](reference_oh_my_claudecode.md) — oh-my-claudecode (OMC) — multi-agent orchestration: Team pipeline, 19 agents, 32 skills, magic keywords, tmux CLI workers, hooks, OpenClaw, custom skills
 - [reference_marketing_skills.md](reference_marketing_skills.md) — 34 marketing skills (coreyhaines31) — CRO, SEO, copy, paid ads, email, growth, strategy. Installed in claude-starter-pack/skills/
+- [reference_ruflo.md](reference_ruflo.md) — ruflo/claude-flow v3.5 — 134 skills, 259 MCP tools, 60+ agents, swarm topologies, SPARC, HNSW memory, dual-mode Claude+Codex, 17 hooks + 12 workers
