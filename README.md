@@ -13,8 +13,9 @@ bash install.sh
 The install script will:
 - Copy all memory files to your Claude project memory directory
 - Install the `/security-review` command globally
-- Install GET SHIT DONE (GSD) via npx
-- Print install instructions for all other skills
+- Install all bundled skills in `skills/` to `~/.claude/skills/`
+- Install GET SHIT DONE (GSD) and Firecrawl CLI via npx
+- Print install instructions for any remaining external skills
 
 ---
 
@@ -50,6 +51,29 @@ Custom slash commands installed to `~/.claude/commands/`.
 | Command | Description |
 |---------|-------------|
 | `/security-review` | 3-phase security audit of current branch changes |
+
+### Bundled Skills (`skills/`)
+
+All folders here are copied to `~/.claude/skills/` by `install.sh`. They cover three major buckets:
+
+**Corey Haines' Marketing Skills** (32 skills) — full funnel: `seo-audit`, `ai-seo`, `programmatic-seo`, `copywriting`, `copy-editing`, `page-cro`, `signup-flow-cro`, `onboarding-cro`, `form-cro`, `popup-cro`, `paywall-upgrade-cro`, `paid-ads`, `ad-creative`, `email-sequence`, `cold-email`, `customer-research`, `churn-prevention`, `analytics-tracking`, `ab-test-setup`, `pricing-strategy`, `lead-magnets`, `free-tool-strategy`, `marketing-ideas`, `marketing-psychology`, `social-content`, `content-strategy`, `competitor-alternatives`, `referral-program`, `revops`, `sales-enablement`, `launch-strategy`, `schema-markup`, `site-architecture`, `product-marketing-context`.
+
+**Firecrawl Blog's "Best Claude Code Skills 2026"** (12 collections, 47 individual skills) — see [Best Claude Code Skills](https://www.firecrawl.dev/blog/best-claude-code-skills):
+
+| Source | Skills bundled |
+|--------|----------------|
+| **Firecrawl CLI** (firecrawl/firecrawl-cli) | `firecrawl-scrape`, `firecrawl-search`, `firecrawl-crawl`, `firecrawl-map`, `firecrawl-interact`, `firecrawl-parse`, `firecrawl-agent`, `firecrawl-monitor`, `firecrawl-download`, `firecrawl-cli` |
+| **Karpathy Guidelines** (forrestchang/andrej-karpathy-skills) | `karpathy-guidelines` — think before coding, simplicity first, surgical changes, goal-driven execution |
+| **Anthropic Frontend Design** (anthropics/skills) | `frontend-design` — bans Inter/Roboto, pushes bold aesthetic direction |
+| **Obra Superpowers** (obra/superpowers) | `brainstorming`, `writing-plans`, `executing-plans`, `subagent-driven-development`, `test-driven-development`, `using-git-worktrees`, `requesting-code-review`, `receiving-code-review`, `dispatching-parallel-agents`, `systematic-debugging`, `verification-before-completion`, `finishing-a-development-branch`, `using-superpowers`, `writing-skills` |
+| **Vercel Agent Skills** (vercel-labs/agent-skills) | `web-design-guidelines`, `react-best-practices`, `composition-patterns` |
+| **Anthropic Document Skills** (anthropics/skills) | `pdf`, `docx`, `xlsx`, `pptx` |
+| **Anthropic Webapp Testing** (anthropics/skills) | `webapp-testing` — Playwright-based local browser testing |
+| **Trail of Bits Security** (trailofbits/skills) | `static-analysis`, `semgrep-rule-creator`, `semgrep-rule-variant-creator`, `variant-analysis`, `audit-context-building`, `spec-to-code-compliance`, `second-opinion`, `skill-improver`, `gh-cli`, `git-cleanup` |
+| **Remotion Best Practices** (remotion-dev/skills) | `remotion-best-practices` — programmatic video in React |
+| **Anthropic Skill Creator** (anthropics/skills) | `skill-creator` — interactive Q&A to build your own skills |
+
+**Claude-Flow Tooling** (claude-flow v3.5) — `swarm-orchestration`, `swarm-advanced`, `hive-mind`, `sparc-methodology`, `v3-ddd-architecture`, `v3-swarm-coordination`, `neural-training`, `agentdb-memory-patterns`, `agentdb-vector-search`, `memory-management`, `hooks-automation`, `workflow-automation`, `verification-quality`, `performance-analysis`, `github-automation`, `github-code-review`, `pair-programming`, `skill-builder`, plus 7 agent skills (`agent-coder`, `agent-tester`, `agent-researcher`, `agent-architecture`, `agent-data-ml-model`, `agent-security-manager`).
 
 ---
 

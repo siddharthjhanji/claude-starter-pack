@@ -68,7 +68,24 @@ install_commands() {
   done
 }
 
-# ── 4. Install skills & tools (via npx / brew / curl) ─────────────────────────
+# ── 4. Install bundled skills (skills/*  →  ~/.claude/skills/) ────────────────
+install_bundled_skills() {
+  info "Installing bundled skill folders to ~/.claude/skills/ ..."
+  mkdir -p "$CLAUDE_DIR/skills"
+
+  local count=0
+  for d in "$REPO_DIR/skills/"*/; do
+    name="$(basename "$d")"
+    if [ -d "$CLAUDE_DIR/skills/$name" ]; then
+      continue   # already installed
+    fi
+    cp -R "$d" "$CLAUDE_DIR/skills/$name"
+    count=$((count + 1))
+  done
+  success "  Installed $count new skills (skipped any already present)"
+}
+
+# ── 5. Install external skills & tools (via npx / brew / curl) ────────────────
 install_skills() {
   info "Installing external skills and tools..."
   echo ""
@@ -80,6 +97,10 @@ install_skills() {
   else
     success "  GSD already installed"
   fi
+
+  # Firecrawl CLI + skills (10 skills: scrape, search, crawl, map, interact, etc.)
+  echo "  Installing Firecrawl CLI + skills..."
+  npx -y firecrawl-cli@latest init --all 2>/dev/null && success "  Firecrawl installed" || warn "  Firecrawl install needs an API key — run: npx -y firecrawl-cli@latest init --all --browser"
 
   echo ""
   info "The following skills are referenced in memory but require manual installation:"
@@ -131,6 +152,8 @@ note_im8() {
 install_memory
 echo ""
 install_commands
+echo ""
+install_bundled_skills
 echo ""
 install_skills
 note_im8
