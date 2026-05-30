@@ -80,6 +80,28 @@ All folders here are copied to `~/.claude/skills/` by `install.sh`. They cover t
 - `niche-research-first-pass` — distribution-first first-pass eval; kills ideas without concrete GTM paths
 - `niche-success-scorecard` — 0–100 weighted score with go/no-go thresholds
 
+**Snyk Studio Recipes (8 skills)** — security/SBOM tooling from snyk/studio-recipes:
+- `snyk-fix`, `secure-dependency-health-check`, `secure-at-inception`, `sbom-analyzer`, `iac-security`, `drift-detector`, `container-security`, `ai-inventory` (AIBOM for Python AI/ML projects)
+
+**Anthropic Skills — extended set (10 more)** — beyond the original 7 in the Firecrawl list, from anthropics/skills:
+- Design/creative: `algorithmic-art`, `canvas-design`, `theme-factory`, `brand-guidelines`, `web-artifacts-builder`
+- Communication: `internal-comms`, `slack-gif-creator`
+- Document collaboration: `doc-coauthoring`
+- Dev tooling: `mcp-builder`, `claude-api` (build/migrate Anthropic SDK apps with prompt caching)
+
+**Mafia Claude Skills (18 skills)** — Spanish-speaking community pack from alexdcd/Mafia-Claude-Skills:
+- AI/automation: `agent-browser`, `prompt-master`, `openrouter` (400+ models via one API), `audio-transcriber`, `humanizer`, `process-interviewer`
+- Research/decisions: `deep-research`, `fact-checker`, `decision-toolkit`
+- Skill tooling: `find-skills`, `template-skill`, `repo-first-defense`, `frontier-plan-opencode-executor`
+- Marketing/UI: `landing-page-mastery`, `frontend-slides`, `vercel-react-best-practices`
+- Productivity: `file-organizer`, `gestor-autonomos`
+- (Skipped: `frontend-design`, `mcp-builder` — already covered by Anthropic's versions.)
+
+**Wondel Skills — 42 knowledge-base skills** — classic books and frameworks distilled into invokable skills (from wondelai/skills):
+- **Product/UX**: `lean-startup`, `lean-ux`, `design-sprint`, `inspired-product`, `continuous-discovery`, `jobs-to-be-done`, `mom-test`, `hooked-ux`, `microinteractions`, `top-design`, `design-everyday-things`, `ux-heuristics`, `refactoring-ui`, `web-typography`, `ios-hig-design`, `high-perf-browser`
+- **Marketing/Sales/Strategy**: `obviously-awesome`, `blue-ocean-strategy`, `crossing-the-chasm`, `hundred-million-offers`, `one-page-marketing`, `predictable-revenue`, `storybrand-messaging`, `scorecard-marketing`, `contagious`, `made-to-stick`, `influence-psychology`, `negotiation`, `cro-methodology`, `improve-retention`, `traction-eos`, `37signals-way`, `drive-motivation`
+- **Engineering**: `clean-code`, `clean-architecture`, `domain-driven-design`, `software-design-philosophy`, `refactoring-patterns`, `pragmatic-programmer`, `release-it`, `ddia-systems`, `system-design`
+
 **alirezarezvani/claude-skills subset (163 skills)** — vendored from a 339-skill production library covering 9 domains. Marketing folder skipped (duplicates Corey Haines); marketing/business-growth/product-team/etc. categories left in the source repo. Three categories installed:
 
 - **Engineering (~79)** — `rag-architect`, `mcp-server-builder`, `llm-cost-optimizer`, `prompt-governance`, `statistical-analyst`, `runbook-generator`, `slo-architect`, `observability-designer`, `database-schema-designer`, `ci-cd-pipeline-builder`, `dependency-auditor`, `release-manager`, `performance-profiler`, `pr-review-expert`, `api-design-reviewer`, `api-test-suite-builder`, `migration-architect`, `code-tour`, `chaos-engineering`, `feature-flags-architect`, `git-worktree-manager`, `terraform-patterns`, `docker-development`, `kubernetes-operator`, `helm-chart-builder`, `agent-designer`, `agent-workflow-designer`, `workflow-builder`, `karpathy-coder`, plus more.

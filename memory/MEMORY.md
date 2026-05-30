@@ -7,6 +7,10 @@
 - [reference_ui_ux_pro_max.md](reference_ui_ux_pro_max.md) — UI/UX Pro Max skill — 67 styles, 161 industry patterns, 99 UX rules, component stack, token architecture. IM8 brand overrides this.
 - [reference_awesome_claude_code.md](reference_awesome_claude_code.md) — Awesome Claude Code directory — best skills, agents, hooks, slash commands, orchestrators, tooling, CLAUDE.md templates
 - [reference_awesome_claude_skills.md](reference_awesome_claude_skills.md) — travisvn/awesome-claude-skills — curated directory specifically of Claude Skills (narrower than awesome-claude-code)
+- [reference_anthropic_skills.md](reference_anthropic_skills.md) — anthropics/skills — all 17 official Anthropic skills vendored (documents, design/creative, dev tooling, communication). Authoritative source — prefer over community alternatives.
+- [reference_snyk_studio_recipes.md](reference_snyk_studio_recipes.md) — Snyk Studio Recipes — 8 security skills: snyk-fix, sbom-analyzer, ai-inventory (AIBOM), iac-security, drift-detector, container-security, etc.
+- [reference_mafia_skills.md](reference_mafia_skills.md) — alexdcd/Mafia-Claude-Skills — 18 community skills (agent-browser, openrouter 400+ models, deep-research, audio-transcriber, decision-toolkit, prompt-master)
+- [reference_wondel_skills.md](reference_wondel_skills.md) — wondelai/skills — 42 classic books as skills (Lean Startup, JTBD, Mom Test, Blue Ocean, Crossing the Chasm, Obviously Awesome, Clean Code, DDD, DDIA, Pragmatic Programmer, etc.)
 - [reference_security_review.md](reference_security_review.md) — Claude Code Security Review — /security-review command (installed) + GitHub Action for automated PR scanning
 - [reference_n8n_skills.md](reference_n8n_skills.md) — n8n Skills — 7 skills for building n8n workflows: expressions, MCP tools, patterns, validation, node config, JS/Python code nodes
 - [reference_geo_seo.md](reference_geo_seo.md) — GEO-SEO Claude — 13 skills for Generative Engine Optimization: citability scoring, AI crawlers, llms.txt, brand mentions, platform optimization, schema, reports, agency CRM
