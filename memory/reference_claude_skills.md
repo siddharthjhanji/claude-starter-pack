@@ -1,11 +1,25 @@
 ---
-name: Claude Skills (alirezarezvani)
-description: 205 production-ready skills across 9 domains — engineering, product, marketing, C-level advisory, compliance, PM, finance, business growth. 16 cs-* agents, 19 slash commands, 254 stdlib-only Python tools. Multi-platform: Claude Code, Codex, Gemini CLI, Cursor, Aider.
-type: reference
+name: claude-skills-alirezarezvani
+description: "205 production-ready skills across 9 domains — engineering, product, marketing, C-level advisory, compliance, PM, finance, business growth. 16 cs-* agents, 19 slash commands, 254 stdlib-only Python tools. Multi-platform: Claude Code, Codex, Gemini CLI, Cursor, Aider."
+metadata: 
+  node_type: memory
+  type: reference
+  originSessionId: 4acd8e0c-c6b0-44e9-a1ea-93274c928bba
 ---
 
 Repo: https://github.com/alirezarezvani/claude-skills
 Version: v2.1.2 | License: MIT | Author: alirezarezvani
+
+## Installed locally (as of 2026-05-30)
+
+163 skills from this repo are now in `~/.claude/skills/` (flattened, auto-discoverable). Categories vendored:
+- **engineering** (~79 skills): rag-architect, mcp-server-builder, llm-cost-optimizer, prompt-governance, statistical-analyst, browser-automation, runbook-generator, slo-architect, database-schema-designer, ci-cd-pipeline-builder, dependency-auditor, release-manager, performance-profiler, monorepo-navigator, observability-designer, etc.
+- **c-level-advisor** (~66 skills): ceo/cto/coo/cpo/cmo/cfo/cro/ciso/chro/cdo/caio advisors, ma-playbook, board-deck-builder, board-meeting, scenario-war-room, culture-architect, ma-playbook, founder-mode, plus `cs:*` review commands (cto-review, cmo-review, cfo-review, etc.) and `em:*` executive-mentor (challenge, postmortem, stress-test, board-prep, hard-call)
+- **finance + compliance + ra-qm** (~31 skills): financial-analyst, saas-metrics-coach, business-investment-advisor, ai-act-readiness, fda-qsr-audit-prep, iso27001-audit-prep, iso13485-audit-prep, soc2-audit-prep, gdpr-audit-prep, aims-audit, compliance-readiness, mdr-745-specialist, qms-audit-expert, gdpr-dsgvo-expert, risk-management-specialist, iso42001-specialist, eu-ai-act-specialist, capa-officer, isms-audit-expert, information-security-manager-iso27001
+
+NOT installed: marketing-skill (duplicates Corey Haines marketing skills already vendored), agents/commands/standards/templates dirs, business-growth, business-operations, commercial, productivity, project-management, research, research-ops, custom-gpt, orchestration, product-team, engineering-team (~163 more skills available on demand from the repo).
+
+For Python tools (254 stdlib-only scripts in the original repo), see the source repo — only the SKILL.md files were vendored locally.
 
 ---
 
