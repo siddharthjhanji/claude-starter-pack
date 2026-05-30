@@ -75,6 +75,11 @@ All folders here are copied to `~/.claude/skills/` by `install.sh`. They cover t
 
 **Claude-Flow Tooling** (claude-flow v3.5) — `swarm-orchestration`, `swarm-advanced`, `hive-mind`, `sparc-methodology`, `v3-ddd-architecture`, `v3-swarm-coordination`, `neural-training`, `agentdb-memory-patterns`, `agentdb-vector-search`, `memory-management`, `hooks-automation`, `workflow-automation`, `verification-quality`, `performance-analysis`, `github-automation`, `github-code-review`, `pair-programming`, `skill-builder`, plus 7 agent skills (`agent-coder`, `agent-tester`, `agent-researcher`, `agent-architecture`, `agent-data-ml-model`, `agent-security-manager`).
 
+**SaaS Evaluation Skills** (kirillpolevoy/claude-saas-eval-skills) — lifestyle SaaS opportunity evaluation ($1–3M ARR, solo/duo team):
+- `niche-idea-generator` — generate 5–10 niche SaaS hypotheses based on your unique advantages
+- `niche-research-first-pass` — distribution-first first-pass eval; kills ideas without concrete GTM paths
+- `niche-success-scorecard` — 0–100 weighted score with go/no-go thresholds
+
 ---
 
 ## Skills & Tools — Manual Installation
