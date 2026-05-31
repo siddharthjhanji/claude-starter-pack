@@ -97,6 +97,8 @@ All folders here are copied to `~/.claude/skills/` by `install.sh`. They cover t
 - Productivity: `file-organizer`, `gestor-autonomos`
 - (Skipped: `frontend-design`, `mcp-builder` — already covered by Anthropic's versions.)
 
+**guidechimp-tour-builder** (custom skill) — wraps [Labs64/GuideChimp](https://github.com/Labs64/GuideChimp) (npm JS library) so Claude can generate production in-app tours: step JSON, init code for React/Vue/vanilla, route-keyed configs for SPAs, plugin wiring (beacons, lazy-loading, vueRouter), analytics events, and IM8-branded CSS overrides. Refuses brittle selectors, defaults `exitOverlay: false` for required onboarding, surfaces the EUPL-1.2 vs commercial license question. Pairs with `onboarding-cro` (strategy) and `analytics-tracking` (instrumentation).
+
 **Founder Skills** (ognjengt/founder-skills) — 14 founder/marketer skills. Most read from a `FOUNDER_CONTEXT.md` placed at project root (similar to Corey Haines' `product-marketing-context`):
 - **Strategy/planning**: `strategic-planning`, `go-to-market-plan`, `product-hunt-launch-plan`, `prd-generator` (standalone PRDs — does NOT read FOUNDER_CONTEXT), `competitor-intel`, `pricing-strategist`
 - **Content/copy**: `brand-copywriter`, `viral-hook-creator`, `linkedin-writer`, `x-writer`, `lead-magnet-generator`
