@@ -97,6 +97,12 @@ All folders here are copied to `~/.claude/skills/` by `install.sh`. They cover t
 - Productivity: `file-organizer`, `gestor-autonomos`
 - (Skipped: `frontend-design`, `mcp-builder` — already covered by Anthropic's versions.)
 
+**Founder Skills** (ognjengt/founder-skills) — 14 founder/marketer skills. Most read from a `FOUNDER_CONTEXT.md` placed at project root (similar to Corey Haines' `product-marketing-context`):
+- **Strategy/planning**: `strategic-planning`, `go-to-market-plan`, `product-hunt-launch-plan`, `prd-generator` (standalone PRDs — does NOT read FOUNDER_CONTEXT), `competitor-intel`, `pricing-strategist`
+- **Content/copy**: `brand-copywriter`, `viral-hook-creator`, `linkedin-writer`, `x-writer`, `lead-magnet-generator`
+- **Ops/growth**: `outreach-specialist`, `cro-optimization`, `sop-creator`
+- (Skipped: `marketing-ideas` — Corey Haines version wins)
+
 **Impeccable** (pbakaus/impeccable v3.5) — frontend-design skill upgrade. Beyond Anthropic's `frontend-design`: 7 domain references (typography, color, spatial, motion, interaction, responsive, UX writing), 23 subcommands invoked as `/impeccable craft|polish|audit|critique|animate|bolder|quieter|...`, 27 deterministic anti-pattern rules (kill purple-to-blue gradients, Inter for everything, cards-in-cards, etc.), plus a 12-rule LLM critique pass. Apache 2.0. Includes companion agent `impeccable-manual-edit-applier` in `agents/`. **IM8 brand still overrides.**
 
 **Wondel Skills — 42 knowledge-base skills** — classic books and frameworks distilled into invokable skills (from wondelai/skills):

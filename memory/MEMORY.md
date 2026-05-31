@@ -12,6 +12,7 @@
 - [reference_mafia_skills.md](reference_mafia_skills.md) — alexdcd/Mafia-Claude-Skills — 18 community skills (agent-browser, openrouter 400+ models, deep-research, audio-transcriber, decision-toolkit, prompt-master)
 - [reference_wondel_skills.md](reference_wondel_skills.md) — wondelai/skills — 42 classic books as skills (Lean Startup, JTBD, Mom Test, Blue Ocean, Crossing the Chasm, Obviously Awesome, Clean Code, DDD, DDIA, Pragmatic Programmer, etc.)
 - [reference_impeccable.md](reference_impeccable.md) — pbakaus/impeccable — frontend-design skill upgrade: 23 commands (/impeccable craft|polish|audit|...), 7 domain refs, 27 deterministic anti-pattern rules. IM8 brand still overrides.
+- [reference_founder_skills.md](reference_founder_skills.md) — ognjengt/founder-skills — 14 founder skills (prd-generator, pricing-strategist, viral-hook-creator, linkedin-writer, x-writer, strategic-planning, etc.) Reads FOUNDER_CONTEXT.md at project root.
 - [reference_security_review.md](reference_security_review.md) — Claude Code Security Review — /security-review command (installed) + GitHub Action for automated PR scanning
 - [reference_n8n_skills.md](reference_n8n_skills.md) — n8n Skills — 7 skills for building n8n workflows: expressions, MCP tools, patterns, validation, node config, JS/Python code nodes
 - [reference_geo_seo.md](reference_geo_seo.md) — GEO-SEO Claude — 13 skills for Generative Engine Optimization: citability scoring, AI crawlers, llms.txt, brand mentions, platform optimization, schema, reports, agency CRM
