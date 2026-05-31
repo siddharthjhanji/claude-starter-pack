@@ -97,6 +97,8 @@ All folders here are copied to `~/.claude/skills/` by `install.sh`. They cover t
 - Productivity: `file-organizer`, `gestor-autonomos`
 - (Skipped: `frontend-design`, `mcp-builder` — already covered by Anthropic's versions.)
 
+**Impeccable** (pbakaus/impeccable v3.5) — frontend-design skill upgrade. Beyond Anthropic's `frontend-design`: 7 domain references (typography, color, spatial, motion, interaction, responsive, UX writing), 23 subcommands invoked as `/impeccable craft|polish|audit|critique|animate|bolder|quieter|...`, 27 deterministic anti-pattern rules (kill purple-to-blue gradients, Inter for everything, cards-in-cards, etc.), plus a 12-rule LLM critique pass. Apache 2.0. Includes companion agent `impeccable-manual-edit-applier` in `agents/`. **IM8 brand still overrides.**
+
 **Wondel Skills — 42 knowledge-base skills** — classic books and frameworks distilled into invokable skills (from wondelai/skills):
 - **Product/UX**: `lean-startup`, `lean-ux`, `design-sprint`, `inspired-product`, `continuous-discovery`, `jobs-to-be-done`, `mom-test`, `hooked-ux`, `microinteractions`, `top-design`, `design-everyday-things`, `ux-heuristics`, `refactoring-ui`, `web-typography`, `ios-hig-design`, `high-perf-browser`
 - **Marketing/Sales/Strategy**: `obviously-awesome`, `blue-ocean-strategy`, `crossing-the-chasm`, `hundred-million-offers`, `one-page-marketing`, `predictable-revenue`, `storybrand-messaging`, `scorecard-marketing`, `contagious`, `made-to-stick`, `influence-psychology`, `negotiation`, `cro-methodology`, `improve-retention`, `traction-eos`, `37signals-way`, `drive-motivation`
