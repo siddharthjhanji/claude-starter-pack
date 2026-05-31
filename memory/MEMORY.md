@@ -14,6 +14,7 @@
 - [reference_impeccable.md](reference_impeccable.md) — pbakaus/impeccable — frontend-design skill upgrade: 23 commands (/impeccable craft|polish|audit|...), 7 domain refs, 27 deterministic anti-pattern rules. IM8 brand still overrides.
 - [reference_founder_skills.md](reference_founder_skills.md) — ognjengt/founder-skills — 14 founder skills (prd-generator, pricing-strategist, viral-hook-creator, linkedin-writer, x-writer, strategic-planning, etc.) Reads FOUNDER_CONTEXT.md at project root.
 - [reference_guidechimp.md](reference_guidechimp.md) — Custom guidechimp-tour-builder skill that wraps Labs64/GuideChimp. Generates in-app tours / onboarding flows. EUPL-1.2 or commercial (IM8 → commercial).
+- [reference_spec_kit.md](reference_spec_kit.md) — GitHub Spec Kit CLI (`specify` v0.8.18) installed via uv. Per-project SDD workflow with 9 commands; not vendored to skills/ to avoid overlap with GSD/SPARC/Superpowers. Use `specify init <project> --integration claude` per project.
 - [reference_security_review.md](reference_security_review.md) — Claude Code Security Review — /security-review command (installed) + GitHub Action for automated PR scanning
 - [reference_n8n_skills.md](reference_n8n_skills.md) — n8n Skills — 7 skills for building n8n workflows: expressions, MCP tools, patterns, validation, node config, JS/Python code nodes
 - [reference_geo_seo.md](reference_geo_seo.md) — GEO-SEO Claude — 13 skills for Generative Engine Optimization: citability scoring, AI crawlers, llms.txt, brand mentions, platform optimization, schema, reports, agency CRM

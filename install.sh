@@ -102,6 +102,16 @@ install_skills() {
   echo "  Installing Firecrawl CLI + skills..."
   npx -y firecrawl-cli@latest init --all 2>/dev/null && success "  Firecrawl installed" || warn "  Firecrawl install needs an API key — run: npx -y firecrawl-cli@latest init --all --browser"
 
+  # GitHub Spec-Kit (specify CLI) — per-project SDD workflow, NOT global skills
+  if command -v specify >/dev/null 2>&1; then
+    success "  specify CLI already installed ($(specify --version 2>&1 | head -1))"
+  elif command -v uv >/dev/null 2>&1; then
+    echo "  Installing GitHub Spec-Kit (specify CLI)..."
+    uv tool install specify-cli --from git+https://github.com/github/spec-kit.git 2>/dev/null && success "  specify CLI installed" || warn "  specify install failed — run: uv tool install specify-cli --from git+https://github.com/github/spec-kit.git"
+  else
+    warn "  uv not installed — skipping Spec-Kit. Install uv first: curl -LsSf https://astral.sh/uv/install.sh | sh"
+  fi
+
   echo ""
   info "The following skills are referenced in memory but require manual installation:"
   echo ""

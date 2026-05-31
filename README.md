@@ -131,6 +131,16 @@ npx get-shit-done-cc@latest
 Solves context rot. Fresh 200k subagent contexts. Wave-based parallel execution.
 Commands: `/gsd:new-project`, `/gsd:plan-phase`, `/gsd:execute-phase`, `/gsd:quick`, etc.
 
+### GitHub Spec-Kit — Per-project SDD (alternative to GSD)
+```bash
+# CLI installs globally (install.sh handles this if `uv` is present):
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
+
+# Then per project:
+specify init my-project --integration claude
+```
+Writes 9 commands (`/specify`, `/clarify`, `/plan`, `/tasks`, `/analyze`, `/checklist`, `/implement`, `/constitution`, `/taskstoissues`) into the **project's** `.claude/skills/`. Pick this over GSD when (a) your project uses GitHub Issues heavily (`/taskstoissues` auto-creates them) or (b) the team wants a single canonical SDD methodology. See `memory/reference_spec_kit.md` for the GSD-vs-spec-kit decision matrix.
+
 ### UI/UX Pro Max — 67 styles, 161 industry patterns
 ```bash
 npx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
