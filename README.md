@@ -97,6 +97,13 @@ All folders here are copied to `~/.claude/skills/` by `install.sh`. They cover t
 - Productivity: `file-organizer`, `gestor-autonomos`
 - (Skipped: `frontend-design`, `mcp-builder` — already covered by Anthropic's versions.)
 
+**Claude Ads** (AgriciDaniel/claude-ads v1.7.1, MIT) — multi-platform paid-advertising audit & optimization. Main `/ads` skill orchestrates 22 sub-skills + 10 agents (4 audit + 6 creative). 10-15 min full audit returns 0-100 health score with 209+ checks across:
+- **Platforms:** `/ads google` (AI Max era, 80 checks), `/ads meta` (Andromeda+GEM+Lattice, 50 checks), `/ads youtube`, `/ads linkedin`, `/ads tiktok` (USDS post-divestiture, Smart+), `/ads microsoft`, `/ads apple`, `/ads amazon` (Sponsored Products/Brands/Display + DSP)
+- **Cross-platform:** `/ads audit` (full parallel audit), `/ads attribution` (AdAttributionKit + GA4 + Consent Mode V2), `/ads tracking` (sGTM + CAPI Gateway + dedup + hashing), `/ads competitor`, `/ads landing`, `/ads budget`, `/ads math` (CAC/LTV/ROAS/MER), `/ads creative`, `/ads test`, `/ads dna <url>`, `/ads create`, `/ads generate`, `/ads photoshoot`
+- **Agents:** audit-google, audit-meta, audit-budget, audit-compliance, audit-creative, audit-tracking, copy-writer, creative-strategist, format-adapter, visual-designer
+
+Pairs with Corey Haines' `paid-ads`/`ad-creative` (strategy & bulk creative) — claude-ads is the audit/deep-dive side. Directly relevant to IM8's platform-direct ROAS work and Northbeam migration.
+
 **guidechimp-tour-builder** (custom skill) — wraps [Labs64/GuideChimp](https://github.com/Labs64/GuideChimp) (npm JS library) so Claude can generate production in-app tours: step JSON, init code for React/Vue/vanilla, route-keyed configs for SPAs, plugin wiring (beacons, lazy-loading, vueRouter), analytics events, and IM8-branded CSS overrides. Refuses brittle selectors, defaults `exitOverlay: false` for required onboarding, surfaces the EUPL-1.2 vs commercial license question. Pairs with `onboarding-cro` (strategy) and `analytics-tracking` (instrumentation).
 
 **Founder Skills** (ognjengt/founder-skills) — 14 founder/marketer skills. Most read from a `FOUNDER_CONTEXT.md` placed at project root (similar to Corey Haines' `product-marketing-context`):
