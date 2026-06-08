@@ -97,6 +97,12 @@ All folders here are copied to `~/.claude/skills/` by `install.sh`. They cover t
 - Productivity: `file-organizer`, `gestor-autonomos`
 - (Skipped: `frontend-design`, `mcp-builder` — already covered by Anthropic's versions.)
 
+**Nango meta-skills (2 from nangohq/nango)** — Nango itself is an integration platform alternative to Fivetran/Workato (800+ APIs, used by Replit/Ramp/Mercor), NOT vendored as a skill. Two project-agnostic meta-skills from its `.agents/skills/` were taken:
+- `agent-builder` — 920-line Claude Code subagent design expert (frontmatter, tool config, model selection, delegation patterns) + EXAMPLES.md. Pairs with existing `agent-architecture`/`agent-designer`/`skill-builder`.
+- `creating-skills` — 482-line meta-skill on writing high-quality SKILL.md files (discoverability, scannability, when-to-create). Alternative angle to `skill-creator` (Anthropic) and `skill-builder` (claude-flow).
+
+The other 6 Nango skills (`running-tests`, `creating-database-migrations`, etc.) are tied to the Nango monorepo's paths/tooling and were skipped. See `memory/reference_nango.md` for Nango platform notes (Fivetran trade-off matrix relevant to IM8 data work).
+
 **trading-multi-agent-architecture** (custom skill) — abstracts the Director→Sentiment→Quant→Risk→Execution pattern from AutoHedge (Swarms Corp) into a provider-agnostic Claude Code skill. Teaches structured agent decomposition for any trading/investment decision system: agent system prompts, JSON I/O contracts per role, single-loop discipline, parallel Sentiment+Quant execution, Risk-gates-Execution flow, reference implementation using the Claude Agent SDK. Pairs with `chart-patterns`, `position-sizer`, `breakout-trade-planner`, `statistical-analyst`, `signal-postmortem`. Directly applicable to the personal swing-trading bot project (per `memory/project_trading_bot.md`). Memory reference flags the Swarms Corp reputation caution — pattern abstracted, source not installed.
 
 **Claude Ads** (AgriciDaniel/claude-ads v1.7.1, MIT) — multi-platform paid-advertising audit & optimization. Main `/ads` skill orchestrates 22 sub-skills + 10 agents (4 audit + 6 creative). 10-15 min full audit returns 0-100 health score with 209+ checks across:
