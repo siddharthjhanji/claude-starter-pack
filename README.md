@@ -97,6 +97,13 @@ All folders here are copied to `~/.claude/skills/` by `install.sh`. They cover t
 - Productivity: `file-organizer`, `gestor-autonomos`
 - (Skipped: `frontend-design`, `mcp-builder` — already covered by Anthropic's versions.)
 
+**huashu-design** (alchaincyf/huashu-design, 花叔Design, MIT) — comprehensive HTML-as-design-medium skill. Produces clickable hi-fi prototypes (iOS/web app mockups with real interactions), 1920×1080 HTML presentation decks exportable to PPTX (pptxgenjs) and PDF (pdf-lib), 60fps animations exportable to MP4/GIF (Playwright video recording), infographics, and voiceover-narrated long videos (Doubao TTS + BGM mix). Three differentiated mechanisms:
+- **40 native HTML style library** (20 web + 20 PPT) as fallback against AI slop
+- **3-perspective design consultant** when requirements are ambiguous (parallel real visual variants)
+- **5-dimension review system** for design critique
+
+Skill embodies the right specialist per task (animator / UX designer / slide designer / prototyper). 23 reference files in `references/` loaded on demand. Triggers in both Chinese (做原型, 交互原型, HTML演示, 动画Demo, 设计变体, 评审) and English (prototype, UI mockup, iOS prototype, export MP4/GIF, voiceover). Tech deps installed on demand: `playwright`, `pptxgenjs`, `pdf-lib`, `sharp`. **IM8 brand still overrides** for any IM8 work (same rule as for frontend-design / impeccable). Bundled 5.2MB (5 large bgm-*.mp3 files excluded — easily re-pulled from source). See `memory/reference_huashu_design.md` for the full skill-comparison matrix vs `frontend-design`, `impeccable`, `refactoring-ui`, `remotion-best-practices`, etc.
+
 **Nango meta-skills (2 from nangohq/nango)** — Nango itself is an integration platform alternative to Fivetran/Workato (800+ APIs, used by Replit/Ramp/Mercor), NOT vendored as a skill. Two project-agnostic meta-skills from its `.agents/skills/` were taken:
 - `agent-builder` — 920-line Claude Code subagent design expert (frontmatter, tool config, model selection, delegation patterns) + EXAMPLES.md. Pairs with existing `agent-architecture`/`agent-designer`/`skill-builder`.
 - `creating-skills` — 482-line meta-skill on writing high-quality SKILL.md files (discoverability, scannability, when-to-create). Alternative angle to `skill-creator` (Anthropic) and `skill-builder` (claude-flow).
