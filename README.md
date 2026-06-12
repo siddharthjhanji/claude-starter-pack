@@ -99,6 +99,15 @@ All folders here are copied to `~/.claude/skills/` by `install.sh`. They cover t
 
 **agent-reach** (Panniantong/Agent-Reach v1.4.0, MIT) — routing skill that gives agents access to **17 platforms via free CLI tools** including ones Firecrawl can't handle well: **Chinese platforms** (小红书 Xiaohongshu, 微博 Weibo, B站 Bilibili, 抖音 Douyin, 雪球 Xueqiu, WeChat 公众号) plus Twitter/X (no API key), Reddit (bypasses 403), LinkedIn, YouTube subtitles, V2EX, podcasts, RSS. Only the routing brain is vendored (SKILL.md + 6 category references, ~44KB total); upstream CLI tools (`twitter`, `rdt`, `xhs-cli`, `yt-dlp`, `mcporter`) install on demand via one-line official installer (no API keys needed; all data stays local). Bilingual triggers (Chinese + English). Especially valuable for IM8 work — Chinese health/wellness market intelligence — and for the trading bot project (雪球 stock sentiment, 哔哩哔哩 retail trader videos). Complements [[firecrawl-scrape]] (English web), [[defuddle]] (clean MD), [[reference_youtube_clipper]] (full clipper pipeline). See `memory/reference_agent_reach.md` for the install decision matrix.
 
+**Hindsight Agent Memory (vectorize-io/hindsight, MIT)** — 6 skills from the production-grade agent memory system that claims SOTA on LongMemEval (independently reproduced by Virginia Tech Sanghani Center). Backend = Docker + PostgreSQL + LLM provider (OpenAI/Anthropic/Gemini/Groq/Ollama/LMStudio/MiniMax). Designed for "learning, not just remembering" — distinguishes itself from RAG and knowledge graphs by extracting reusable mental models from experience:
+
+- `hindsight-docs` — 1.4MB reference docs (full OpenAPI spec, dev guides, SDK references); the official recommendation for any coding agent working with Hindsight
+- `hindsight-architect` — memory-system DESIGN skill; produces implementation plan with bank config + tag schema + code outline. Useful before writing any memory-system code, even non-Hindsight
+- `hindsight-cloud` / `hindsight-local` / `hindsight-self-hosted` — three deployment modes (Vectorize SaaS, single-user local, team self-hosted Docker)
+- `hindsight-create-agent` — builds Hindsight-backed Claude Code subagent files with persistent memory (renamed from `create-agent` to avoid namespace collision)
+
+Skipped Hindsight-monorepo-specific: `code-review`, `hs-release`, Cursor-specific `hindsight-recall`. See `memory/reference_hindsight.md` for the Hindsight-vs-claude-mem-vs-AgentDB decision matrix.
+
 **Cybersecurity skills (57 total, 2 sources)** — combined from Masriyan/Claude-Code-CyberSecurity-Skill (all 15 broad domains, renamed to drop `NN-` prefixes) + curated 42 from mukul975/Anthropic-Cybersecurity-Skills (712 of 754 deliberately not vendored — heavy forensics/red-team specialization, would add ~75k tokens metadata/session).
 
 - **15 broad domains (Masriyan):** `recon-osint`, `vulnerability-scanner`, `exploit-development`, `reverse-engineering`, `malware-analysis`, `threat-hunting`, `incident-response`, `network-security`, `web-security`, `cloud-security`, `csoc-automation`, `log-analysis`, `crypto-analysis`, `red-team-ops`, `blue-team-defense`
